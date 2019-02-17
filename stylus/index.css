@@ -88,10 +88,23 @@
   padding: 0;
   border: 0;
 }
-#header .center .fr >ul {
+#header .center .fr .login {
   display: flex;
   align-items: center;
-  height: 100%;
+  width: 81px;
+  height: 40px;
+}
+#header .center .fr .login li a {
+  display: flex;
+  align-items: center;
+  height: 12px;
+  font-size: 12px;
+  color: #b0b0b0;
+  padding: 0 8px;
+  border-right: 1px solid #b0b0b0;
+}
+#header .center .fr .login li:last-of-type a {
+  border-right: none;
 }
 #header .center .fr .shopcart {
   display: flex;
