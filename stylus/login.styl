@@ -1,18 +1,6 @@
-/*样式初始化*/
-body,h1,h2,h3,h4,h5,h6
-  font  12px "宋体",Times New Roman
-
 body
   background  rgb(20,33,42)
 
-/*预定义样式*/
-.w
-  width  1000px
-  margin  0 auto
-
-input
-  &:focus
-    border  2px solid orange
 
 /*用户登录*/
 .top
@@ -37,10 +25,15 @@ input
   color  #fff
   margin-right  0px
   border-radius  4px
+  font  12px "宋体",Times New Roman
 
   .login_center
     width  360px
     margin  10px auto
+    padding 30px 0
+
+    &.hide
+      display: none
 
     .login_top
       margin  10px 0
@@ -70,8 +63,12 @@ input
 
     .login_main
       padding  5px 0
+      input
+        &:focus
+          border  2px solid orange
 
-      .username
+
+    .username
         font  16px Times New Roman
         height  40px
         line-height  40px
@@ -101,7 +98,12 @@ input
 
 
 
-        .right
+        .send
+          width:100px
+          height:42px
+          margin-left:12px
+
+      .right
           margin-left  20px
 
 

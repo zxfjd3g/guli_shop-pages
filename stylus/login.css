@@ -1,23 +1,5 @@
-/*样式初始化*/
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font: 12px "宋体", Times New Roman;
-}
 body {
   background: #14212a;
-}
-/*预定义样式*/
-.w {
-  width: 1000px;
-  margin: 0 auto;
-}
-input:focus {
-  border: 2px solid #ffa500;
 }
 /*用户登录*/
 .top {
@@ -42,10 +24,15 @@ input:focus {
   color: #fff;
   margin-right: 0px;
   border-radius: 4px;
+  font: 12px "宋体", Times New Roman;
 }
 .login .login_center {
   width: 360px;
   margin: 10px auto;
+  padding: 30px 0;
+}
+.login .login_center.hide {
+  display: none;
 }
 .login .login_center .login_top {
   margin: 10px 0;
@@ -71,33 +58,41 @@ input:focus {
 .login .login_center .login_main {
   padding: 5px 0;
 }
-.login .login_center .login_main .username {
+.login .login_center .login_main input:focus {
+  border: 2px solid #ffa500;
+}
+.login .login_center .username {
   font: 16px Times New Roman;
   height: 40px;
   line-height: 40px;
   margin: 35px 0;
 }
-.login .login_center .login_main .username .shurukuang {
+.login .login_center .username .shurukuang {
   width: 220px;
   height: 30px;
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
-.login .login_center .login_main .username .shurukuang:focus {
+.login .login_center .username .shurukuang:focus {
   border: 1px solid #00f;
   background: #f0ffff;
 }
-.login .login_center .login_main .username .yanzhengma {
+.login .login_center .username .yanzhengma {
   width: 100px;
   height: 30px;
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
-.login .login_center .login_main .username .yanzhengma:focus {
+.login .login_center .username .yanzhengma:focus {
   border: 1px solid #00f;
   background: #f0ffff;
 }
-.login .login_center .login_main .username .right {
+.login .login_center .username .send {
+  width: 100px;
+  height: 42px;
+  margin-left: 12px;
+}
+.login .login_center .right {
   margin-left: 20px;
 }
 .login .login_center .login_submit .submit {
