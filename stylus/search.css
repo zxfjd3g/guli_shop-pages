@@ -755,31 +755,18 @@
 }
 .danpin .main {
   width: 1226px;
-  height: 340px;
 }
 .danpin .main .mingxing {
-  width: 234px;
+  float: left;
+  width: 230px;
   height: 339px;
   background: #fafafa;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
-.danpin .main .mingxing:nth-of-type(1) {
-  border-top: 1px solid #ffa500;
-  margin-right: 14px;
-}
-.danpin .main .mingxing:nth-of-type(2) {
-  border-top: 1px solid #008000;
-  margin-right: 14px;
-}
-.danpin .main .mingxing:nth-of-type(3) {
-  border-top: 1px solid #00f;
-  margin-right: 14px;
-}
-.danpin .main .mingxing:nth-of-type(4) {
-  border-top: 1px solid #f00;
-  margin-right: 14px;
-}
-.danpin .main .mingxing:nth-of-type(5) {
-  border-top: 1px solid #008080;
+.danpin .main .mingxing:hover {
+  border-color: #f00;
 }
 .danpin .main .mingxing .sub_mingxing {
   padding: 37px;
