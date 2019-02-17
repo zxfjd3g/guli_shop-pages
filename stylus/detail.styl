@@ -1,0 +1,395 @@
+/*header*/
+#header
+  display: flex
+  justify-content: center
+  width: 100%
+  height: 40px
+  background-color: #333
+  .center
+    width: 1226px
+    height: 40px
+    flex-shrink: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    ul
+      li
+        a
+          display: flex
+          align-items: center
+          height: 12px
+          font-size: 12px
+          color: #b0b0b0
+          padding: 0 8px
+          border-right: 1px solid #b0b0b0
+
+        &:last-of-type
+          a
+            border-right: none
+    .fl
+      flex-shrink: 0
+      display: flex
+      width: 612px
+    .fr
+      display: flex
+      height: 40px
+      .user
+        width: 120px
+        height: 40px
+        line-height 40px
+        font-size 12px
+        text-align: center
+        position relative
+        &:hover
+          .username
+            color:#ff6700
+            background-color: #fff
+          .selector
+            padding: 7px 0
+            height 120px
+        .username
+          display: block
+          width: 100%
+          height: 100%
+          line-height: 40px
+          color: #b0b0b0
+          position relative
+          z-index 201
+        .selector
+          position absolute
+          left 0
+          top 40px
+          width: 100%
+          z-index 200
+          box-shadow 0 2px 10px rgba(0,0,0,0.15)
+          height: 0
+          background-color: #fff;
+          overflow hidden
+          transition all 0.2s
+          li
+            width 100%
+            height 30px
+            &:hover
+              a
+                color:#ff6700
+                background-color: #fafafa
+            a
+              display: block
+              width 100%
+              height 100%
+              line-height: 30px
+              padding: 0
+              border 0
+
+      >ul
+        display: flex
+        align-items: center
+        height: 100%
+      .shopcart
+        display: flex
+        width: 120px
+        font-size: 12px
+        color: #fff
+        margin: 0 20px
+        justify-content: center
+        align-items: center
+        background-color: #ff6700
+
+/*detail*/
+#detail
+  #nav
+    width: 100%
+    height: 100px
+    flex-shrink: 0
+    position relative
+    .banner_x
+      width: 1226px
+      height: 100%
+      display flex
+      & > a
+        display: block
+        height: 100%
+      .logo
+        width: 50px
+        text-indent: -10000px
+        background: url("../image/nav/logo_top.png") no-repeat
+        background-size: 100%
+        background-position: center
+
+      .gif
+        width: 180px
+        background: url("../image/nav/yyymix.gif") no-repeat
+        background-size: 100%
+        background-position: center
+
+      .list
+        display: flex
+        height: 100%
+        & > li
+          display: flex
+          align-items: center
+          margin: 0 10px
+          font-size: 16px
+          &:hover
+            a
+              color: #ff6700
+
+      .fr
+        display: flex
+        justify-content flex-end
+        align-items: center
+        height: 100%
+        flex-grow 1
+        .button
+          box-sizing: border-box
+          width: 50px
+          height: 50px
+          background-color: #fff
+          border: 1px solid #ccc
+          text-align: center
+          line-height: 50px
+          font-size: 18px
+          font-weight: bold
+          cursor: pointer
+          &:active
+            background-color: #ff6700
+            color: #fff
+        .search
+          position relative
+          .text
+            box-sizing: border-box
+            width: 250px
+            height: 50px
+            border: 1px solid #ccc
+            padding: 0 10px
+            &:focus
+              outline: none
+              border 1px solid #ff6700
+              ~ .keyword_list
+                display: block
+          .search_hot
+            position absolute
+            top: 16px
+            right: 12px
+            a
+              float left
+              display block
+              font-size 12px
+              height 18px
+              line-height 18px
+              margin-left 5px
+              padding 0 5px
+              background-color: #eee
+              color #757575
+              transition all .2s
+              &:hover
+                color #fff
+                background-color: #ff6700
+          .keyword_list
+            display none
+            position absolute
+            top: 50px
+            left: 0
+            z-index 100
+            width 250px
+            box-sizing border-box
+            border 1px solid #ff6700
+            li
+              position relative
+              box-sizing border-box
+              width: 100%
+              height 30px
+              padding 6px 15px
+              background-color: #fff
+              &:hover
+                background-color: #fafafa
+              a
+                display block
+                width 100%
+                height 100%
+                font-size 12px
+                .result
+                  float: right
+                  color: #b0b0b0
+
+  .xiangqing
+    width 100%
+    height 58px
+    background rgb(240,240,240)
+    .neirong
+      height 58px
+      width 1226px
+      .xiaomi6
+        width 300px
+        height 58px
+        line-height 58px
+        font-size 22px
+        font-weight bold
+      nav
+        display inline-block
+        width 410px
+        height 58px
+        line-height 58px
+        li
+          font-size 14px
+          float left
+          display block
+          margin 0px 5px
+          a
+            color #333
+            font-size 14px
+            &:hover
+              color #ff6700
+  .jieshao
+    .left
+      width 560px
+      >img
+        width 100%
+        height 100%
+      .smallbox
+        display none
+        background-color rgba(0,255,0,0.3)
+        width 280px
+        height 280px
+        position absolute
+        top 0
+        left 0
+      .bigbox
+        display none
+        width  560px
+        height 560px
+        position absolute
+        top -1px
+        right -562px
+        border 1px solid #ccc
+        overflow hidden
+        >img
+          position absolute;
+          left 0
+          top 0
+          height 1120px
+          width 1120px
+      .hiddenbox
+        position absolute
+        height:560px
+        left 0
+        top 0
+        right 0
+        z-index 10
+        border 1px solid #ccc
+        &:hover
+          ~.smallbox
+            display block
+          ~.bigbox
+            display block
+      .swiper-container
+        width: 100%;
+        height: 75px;
+        margin: 20px auto;
+        padding 0 34px;
+        box-sizing border-box
+        .swiper-wrapper
+          .swiper-slide
+            box-sizing border-box
+            &.active
+              border 3px solid red
+            img
+              width: 100%;
+              height: 100%;
+              cursor pointer
+        .swiper-button-next,
+        .swiper-button-prev
+          height: 58px;
+          width:35px
+          top: 22px;
+
+        .swiper-button-prev
+          left: 0;
+          background-position: left;
+
+        .swiper-button-next
+          right: 0;
+          background-position: right;
+
+
+
+    .right
+      width 620px
+      background rgb(248,248,248)
+      padding-bottom 50px
+      .jianjie
+        font-size 14px
+        color rgb(176,176,176)
+        line-height 20px
+      .jiage
+        font-size 18px
+        color #ff6700
+        font-weight bold
+      .xzbb
+        min-height 58px
+        line-height 58px
+        .banben
+          height 58px
+          float left
+          line-height 58px
+          width 290px
+          cursor pointer
+          margin-right 5px
+          margin-bottom 3px
+          border 1px solid #bbb
+          a
+            display block
+            font-size 18px
+            color #000
+            padding 0 10px
+            span
+              display inline-block
+              margin-right 10px
+            .yuandian
+              display inline-block
+              height 15px
+              width 15px
+              border-radius 50%
+              background #000
+              margin-left 80px
+        .active
+          border 1px solid #ff6700
+          a
+            color #ff6700
+      .xqxq
+        height 80px
+        width 555px
+        background rgb(255,255,255)
+        padding 20px
+      .xiadan
+        height 50px
+        line-height 50px
+        .jrgwc
+          height 50px
+          width 200px
+          border none
+          background #ff6700
+          color #fff
+          font-size 18px
+          font-weight bold
+          cursor pointer
+          margin-right 50px
+          &:hover
+            border 1px solid #fff
+
+
+
+
+
+/*footer*/
+#footer
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 120px;
+  margin-top: 20px;
+  padding: 30px 0;
+  font-size: 12px;
+  p
+    height: 30px;

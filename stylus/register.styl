@@ -1,0 +1,121 @@
+body {
+  background: rgb(20,33,42);
+}
+/*预定义样式*/
+body,h1,h2,h3,h4,h5,h6
+  font  12px "宋体",Times New Roman
+
+.w {
+  width: 1000px;
+  margin: 0 auto;
+}
+input {
+  &:focus {
+    border: 2px solid orange;
+  }
+}
+/*用户注册*/
+#regist {
+  width: 1000px;
+  height: 550px;
+  margin: 20px auto;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  .regist_center {
+    width: 760px;
+    margin: 10px auto;
+    .regist_top {
+      margin: 10px 0;
+      .left {
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .right {
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+        a {
+          color: #ff6700;
+          font-weight: bold;
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+      .xian {
+        height: 2px;
+        background: #ff6700;
+        margin: 8px auto;
+      }
+    }
+    .regist_main {
+      padding: 10px 0;
+      padding-left: 45px;
+      .username {
+        font: 16px Times New Roman;
+        height: 40px;
+        line-height: 40px;
+        margin: 20px 0;
+        .shurukuang {
+          width: 220px;
+          height: 30px;
+          border: 1px solid #ccc;
+          padding: 5px 10px;
+          &:focus {
+            border: 1px solid blue;
+            background: #f0ffff;
+          }
+        }
+        .yanzhengma {
+          width: 100px;
+          height: 30px;
+          border: 1px solid #ccc;
+          padding: 5px 10px;
+          &:focus {
+            border: 1px solid blue;
+            background: #f0ffff;
+          }
+        }
+        .right {
+          margin-left: 20px;
+        }
+        span {
+          display: inline-block;
+          margin-left: 20px;
+          font-size: 12px;
+          color: #ccc;
+          font-weight: bold;
+          &:hover {
+            color: #ff6700;
+          }
+        }
+      }
+    }
+    .regist_submit {
+      margin: 20px auto;
+      .submit {
+        border: none;
+        width: 440px;
+        height: 45px;
+        margin-left: 45px;
+        background: #ff6700;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 8px;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid #ccc;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
