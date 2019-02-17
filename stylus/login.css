@@ -16,7 +16,7 @@ body {
   height: 588px;
   background: url("../image/login/login_bg.jpg") no-repeat center center;
 }
-.login {
+.form .login {
   width: 400px;
   height: 470px;
   margin: 30px auto;
@@ -26,76 +26,78 @@ body {
   border-radius: 4px;
   font: 12px "宋体", Times New Roman;
 }
-.login .login_center {
+.form .login .login_center {
   width: 360px;
   margin: 10px auto;
   padding: 30px 0;
 }
-.login .login_center.hide {
+.form .login .login_center.hide {
   display: none;
 }
-.login .login_center .login_top {
+.form .login .login_center .login_top {
   margin: 10px 0;
 }
-.login .login_center .login_top .left {
+.form .login .login_center .login_top .left {
   height: 40px;
   line-height: 40px;
   font-weight: bold;
   font-size: 20px;
 }
-.login .login_center .login_top .right {
+.form .login .login_center .login_top .right {
   height: 40px;
   line-height: 40px;
   font-size: 13px;
 }
-.login .login_center .login_top .right a {
+.form .login .login_center .login_top .right a {
   color: #f00;
   font-weight: bold;
 }
-.login .login_center .login_top .right a:hover {
+.form .login .login_center .login_top .right a:hover {
   color: #ffa500;
 }
-.login .login_center .login_main {
+.form .login .login_center .login_top .xian {
+  height: 2px;
+  background: #ff6700;
+  margin: 8px 0;
+}
+.form .login .login_center .login_main {
   padding: 5px 0;
 }
-.login .login_center .login_main input:focus {
+.form .login .login_center .login_main input:focus {
   border: 2px solid #ffa500;
 }
-.login .login_center .username {
+.form .login .login_center .username {
   font: 16px Times New Roman;
   height: 40px;
   line-height: 40px;
   margin: 35px 0;
 }
-.login .login_center .username .shurukuang {
+.form .login .login_center .username .shurukuang {
   width: 220px;
   height: 30px;
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
-.login .login_center .username .shurukuang:focus {
+.form .login .login_center .username .shurukuang:focus {
   border: 1px solid #00f;
   background: #f0ffff;
 }
-.login .login_center .username .yanzhengma {
+.form .login .login_center .username .yanzhengma {
   width: 100px;
   height: 30px;
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
-.login .login_center .username .yanzhengma:focus {
+.form .login .login_center .username .yanzhengma:focus {
   border: 1px solid #00f;
   background: #f0ffff;
 }
-.login .login_center .username .send {
+.form .login .login_center .username .send {
   width: 100px;
   height: 42px;
   margin-left: 12px;
 }
-.login .login_center .right {
-  margin-left: 20px;
-}
-.login .login_center .login_submit .submit {
+.form .login .login_center .login_submit .submit {
   border: none;
   width: 240px;
   height: 45px;
@@ -108,40 +110,40 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
-.login .login_center .login_submit .submit:hover {
+.form .login .login_center .login_submit .submit:hover {
   border: 1px solid #fff;
 }
-.login .login_center .login_other {
+.form .login .login_center .login_other {
   width: 100%;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.login .login_center .login_other .title {
+.form .login .login_center .login_other .title {
   position: relative;
   width: 100%;
   height: 18px;
   border-bottom: 1px solid #fff;
   font-size: 14px;
 }
-.login .login_center .login_other .title span {
+.form .login .login_center .login_other .title span {
   position: absolute;
   top: 9px;
   left: 138px;
   background-color: #444;
 }
-.login .login_center .login_other a {
+.form .login .login_center .login_other a {
   display: inline-block;
   line-height: 30px;
   color: #fff;
   margin-top: 10px;
   font-size: 18px;
 }
-.login .login_center .login_other a:hover {
+.form .login .login_center .login_other a:hover {
   color: #f00;
 }
-.login .login_center .login_other a i {
+.form .login .login_center .login_other a i {
   display: block;
   float: left;
   width: 33px;
@@ -150,31 +152,9 @@ body {
   background-image: url("../image/login/QQ-weixin.png");
   background-size: auto 100%;
 }
-.login .login_center .login_other a i.qq {
+.form .login .login_center .login_other a i.qq {
   background-position: 0 0;
 }
-.login .login_center .login_other a i.wx {
+.form .login .login_center .login_other a i.wx {
   background-position: -33px 0;
-}
-.xian {
-  height: 2px;
-  background: #ff6700;
-  margin: 8px 0;
-}
-/*设置按钮样式*/
-footer {
-  width: 100%;
-  height: 80px;
-  background: #fff;
-  padding: 30px 0;
-}
-footer .copyright {
-  height: 30px;
-  line-height: 30px;
-  font-size: 13px;
-  word-spacing: 15px;
-  text-align: center;
-}
-footer .copyright first-of-type {
-  margin-top: 10px;
 }
