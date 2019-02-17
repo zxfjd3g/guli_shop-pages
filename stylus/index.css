@@ -484,6 +484,7 @@
 }
 #content #recommend {
   width: 1226px;
+  position: relative;
   flex-shrink: 0;
   height: 672px;
   margin-top: 20px;
@@ -492,6 +493,14 @@
 #content #recommend > h2 {
   height: 58px;
   line-height: 58px;
+}
+#content #recommend .more {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+#content #recommend .more:hover {
+  color: #f00;
 }
 #content #recommend ul {
   display: flex;
@@ -578,28 +587,6 @@
 #content #recommend ul li a .comment p {
   font-size: 12px;
   margin-top: 5px;
-}
-#content #recommend ul .more {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: transparent;
-}
-#content #recommend ul .more:hover {
-  box-shadow: 0px 0px 0px;
-}
-#content #recommend ul .more a {
-  display: block;
-  width: 100%;
-  height: 142px;
-}
-#content #recommend ul .more a:hover {
-  box-shadow: 0px 0px 30px #ccc;
-}
-#content #recommend ul .more a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
 }
 #footer {
   display: flex;
